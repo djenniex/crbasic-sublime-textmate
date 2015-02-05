@@ -1,26 +1,50 @@
-h2. Overview
+# crbasic-sublime-textmate
+
+A [TextMate][textmate] _(and [Sublime Text][sublime])_ bundle for [CRBasic][crbasic].
+
+## Overview
 
 Provides basic syntax highlighting for CRBasic programs using TextMate. It currently has support for a limited set of datalogger instructions, but there is support for control syntax, sub routine and variable declarations, and other basic syntax.
 
 Currently Campbell Scientific's CRBasic Editor is only available for Windows. I created this plugin so that Mac users could view and make basic edits to preexisting datalogger programs. It is not intended as a replacement for the CRBasic Editor.
 
-h2. Installation
+## Installation
+TextMate, and most editors that support TextMate bundles, allow the installation of bundles simply by extracting an archive or cloning the repository into the application's bundle directory. This bundle is no different. Below is a list of common bundle directories.
 
-You will need to download and install the TextMate application prior to installing this bundle. 
-Once installed, your Mac should recognize TMBundle files. Download the "latest crbasic-textmate bundle":https://github.com/downloads/beerlington/crbasic-textmate/crbasic.tmbundle.zip , unzip it, and double click to install.
 
-h2. Project Status
+### Sublime Text
+CRBasic can be installed in a variety of ways in Sublime Text:
+* Through Package Control [http://wbond.net/sublime_packages/package_control](http://wbond.net/sublime_packages/package_control)
 
-I created this TextMate bundle so our company could use it to maintain CRBasic code on Macs. It only contains a subset of datalogger instructions, based on our current needs. If you find this bundle useful and would like to see it updated, please contact me and I will gladly add to it.
+ * Open Package Control
+ * Select 'Install Package'
+ * Find and select 'CRBasic'
 
-h2. About
+* By cloning this repository in Packages
+		cd into your Packages folder
+		git clone git@github.com:djenniex/crbasic-sublime-textmate.git .
 
-CRBasic is a proprietary language derived from the BASIC programming language and developed by Campbell Scientific to control their current line of dataloggers. CRBasic programs are created by and edited using the CRBasic Editor which comes with the LoggerNet / PC400 / RTDAQ datalogger support software packages.
+* By downloading the files and placing them in a directory under Packages, such as CRBasic or User
 
-According to "http://www.campbellsci.com/glossary":http://www.campbellsci.com/glossary, CRBasic is "A datalogger program editor whose structure stems from the BASIC programming language. CRBasic supports keyword, algebraic expressions, and conditional expressions. Dataloggers that use CRBasic include our CR200-series, CR800, CR1000, CR3000, CR5000, and CR9000(X)."
+ If you don't put the files in Packages/User (you *can*, but probably shouldn't), make sure they live in Packages/CRBasic.
 
-More information about the CRBasic programming language can be found in manuals for the dataloggers listed above, found here: "http://www.campbellsci.com/manuals":http://www.campbellsci.com/manuals
+### TextMate
+    /Library/Application Support/TextMate/Bundles
 
-h2. Disclaimer
+### TextMate 2
+You can install this bundle in TextMate 2 by opening the preferences and going to the bundles tab. After installation it will be automatically updated for you.
 
-The CRBasic TextMate bundle is provided as is and is not affiliated with or supported by Campbell Scientific, Inc.
+Credits
+-------
+CRBasic Syntax was originally created by [beerlington][beerlington]
+
+Contributing
+------------
+* Fork the project.
+* Use topic branch.
+* Make pull request.
+
+[sublime]: http://www.sublimetext.com/
+[textmate]: http://macromates.com/
+[crbasic]: http://www.campbellsci.com/
+[beerlington]: https://github.com/beerlington/crbasic-textmate
